@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get "/auth/failure", to: "sessions#failure"
   delete "/logout", to: "sessions#destroy"
 
+
   # Defines the root path route ("/")
   root "home#index"
+  get "/select_repositories", to: "home#select_repositories"
 end
